@@ -261,8 +261,7 @@ var reporting = (function() {
             serverError();
             return;
         }
-        var message = data.response === 1 ? successMessage() : errorMessage();
-        messageContainer.innerHTML = message;
+        messageContainer.innerHTML = data.response === 1 ? successMessage() : errorMessage();
     };
 
     return {afterSubmit: afterSubmit,
